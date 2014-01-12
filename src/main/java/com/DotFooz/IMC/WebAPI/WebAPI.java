@@ -8,6 +8,11 @@ import java.util.ArrayList;
 
 import com.DotFooz.IMC.DataIntepreter.DataInterpreter;
 
+/**
+ * Pulls Web information for the applicaiton to parse
+ * @author DotFooz
+ *
+ */
 public class WebAPI {
 
 	public String getMarketPage(String item, String appid)

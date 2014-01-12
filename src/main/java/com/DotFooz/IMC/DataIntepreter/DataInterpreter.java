@@ -8,6 +8,11 @@ import com.DotFooz.IMC.Money.CurrencyInterpreter;
 import com.DotFooz.IMC.Static.Count;
 import com.DotFooz.IMC.WebAPI.WebAPI;
 
+/**
+ * Regex interpreter, mainly used for parsing information grabbed by the WebAPI
+ * @author DotFooz
+ *
+ */
 public class DataInterpreter {
 
 	public String getItemPrice(String item, String appid)

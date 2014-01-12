@@ -1,7 +1,17 @@
 package com.DotFooz.IMC.Money;
 
+/**
+ * Small class that converts all currencies found on the market to USD (In need of better code)
+ * @author DotFooz
+ *
+ */
 public class CurrencyInterpreter {
 
+	/**
+	 * Converts the HTML codes to readable names.
+	 * @param currencyString
+	 * @return An interpretable currency name
+	 */
 	public String translateCurrencyType(String currencyString)
 	{
 		return currencyString.replace("&#82;&#36;", "Brazilian Equals;;")
@@ -13,6 +23,11 @@ public class CurrencyInterpreter {
 				.replace("-", "0");
 	}
 	
+	/**
+	 * Actually converts the monetary values
+	 * @param currencyString String to interpret for currency
+	 * @return
+	 */
 	public double convertToUSD(String currencyString)
 	{
 		String[] splitter = currencyString.split(";;");

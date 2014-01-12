@@ -7,6 +7,11 @@ import com.DotFooz.IMC.Money.CurrencyInterpreter;
 import com.DotFooz.IMC.Static.Count;
 import com.DotFooz.IMC.WebAPI.WebAPI;
 
+/**
+ * Main class that finds speicfic prices for items; Threaded.
+ * @author DotFooz
+ *
+ */
 public class PriceHunter implements Runnable{
 
 	private String item;
