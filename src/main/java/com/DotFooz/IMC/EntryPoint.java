@@ -8,10 +8,10 @@ public class EntryPoint {
 	{
 		Application app = new Application();
 		String id = "dotfooz";
-		app.ReadInv(id,"440","2",false,"Team Fortress 2 backpack");
-		app.ReadInv(id, "730", "2",false,"CS:GO Inventory");
+		app.ReadInv(id,"440","2",false,"Team Fortress 2 backpack");//Example Usage
+		app.ReadInv(id, "730", "2",false,"CS:GO Inventory");//Example Usage
 		//app.ReadInv(id, "570", "2",false);//DOTA
-		app.ReadInv(id, "753", "6",true, "Steam Inventory");
+		app.ReadInv(id, "753", "6",true, "Steam Inventory");//Example Usage
 
 		System.out.println("//============= RESULTS =============");
 		System.out.println("Total cash at competitors pricing: $"+app.finalCash(Count.totalLowest));
