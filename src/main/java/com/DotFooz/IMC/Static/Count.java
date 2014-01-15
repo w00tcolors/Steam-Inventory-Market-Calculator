@@ -11,5 +11,6 @@ public class Count {
 
 	public static ArrayList<Double> totalLowest = new ArrayList<Double>();
 	public static ArrayList<Double> totalAverage = new ArrayList<Double>();
+	public static ArrayList<String> log = new ArrayList<String>();
 	
 }

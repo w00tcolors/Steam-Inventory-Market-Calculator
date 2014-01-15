@@ -37,11 +37,15 @@ public class PriceHunter implements Runnable{
 			pullDailyAverage();
 			if(printData)
 			{
-				if(averagePrice != null && numSold != null)
-				System.out.println(item + lowestPrice+ " Average price: "+averagePrice+" out of "+numSold.replace("\"", ""));
-				else
-				System.out.println(item + lowestPrice);
-
+				if(averagePrice != null && numSold != null){
+				String data = item + lowestPrice+ " Average price: "+averagePrice+" out of "+numSold.replace("\"", "");
+				Count.log.add(data);
+				System.out.println(data);
+				}else{
+					String lower = item + lowestPrice;
+				System.out.println(lower);
+				Count.log.add(lower);
+				}
 			}
 			
 	}
